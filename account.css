@@ -1,0 +1,183 @@
+.header-main {
+  background-color: #fff;
+  padding: 0px;
+}
+
+.header-main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 148px;
+  height: 38px;
+  width: 100%;
+  max-width: 1170px;
+  margin: 10px auto;
+  padding: 10px 0;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: var(--primary);
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: var(--muted);
+  border-radius: 4px;
+  padding-right: 10px;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  width: 210px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.search-button svg {
+  width: 18px;
+  height: 18px;
+  stroke: #333;
+}
+
+.header-icons svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  stroke: #333;
+}
+
+.icon-link {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* .cart-count {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: var(--primary);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+} */
+ .cart-with-badge {
+   position: relative;
+   display: inline-block;
+ }
+
+ .cart-badge {
+   position: absolute;
+   top: -5px;
+   right: -5px;
+   background-color: #ff0000;
+   color: white;
+   font-size: 12px;
+   font-weight: bold;
+   border-radius: 50%;
+   width: 18px;
+   height: 18px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   line-height: 1;
+ }
+
+.account-container {
+  position: relative;
+  display: inline-block;
+}
+
+.account-icon {
+  width: 32px;
+  height: 32px;
+  background: #DB4444;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.account-icon img {
+  width: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.account-box {
+  width: 225px;
+  height: 208px;
+  background: rgb(59, 56, 56);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  position: absolute;
+  top: 126px;
+  left: -190px;
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+#toggle-account:checked~.account-box {
+  display: flex;
+}
+
+.account-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.account-item img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.account-item span {
+  font-size: 14px;
+}
