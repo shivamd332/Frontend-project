@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exclusive E-commerce</title>
-    <link rel="stylesheet" href="Signup.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <!-- this is header top section -->
+
+<!-- this is header top section -->
     <div class="header-top">
         <div class="container header-top-content">
             <div class="header-top-frame1">
@@ -26,23 +27,28 @@
         </div>
     </div>
 
+    
 
 
 
 
-    <!-- this is the main header -->
-<div class="nav-header">
-    <div class="nav-inner">
-        <div class="nav-left">
-            <div class="logo">Exclusive</div>
-            <div class="menu">
-                <a href="Index.html" class="menu-item">Home</a>
-                <a href="#" class="menu-item">Contact</a>
-                <a href="#" class="menu-item">About</a>
-                <a href="#" class="menu-item underline-link">Sign Up</a>
+
+    <!-- this is main header -->
+     <header class="header-main">
+        <div class="container header-main-content">
+            <div class="logo">
+                <a href="#">Exclusive</a>
             </div>
-        </div>
-        <div class="search-box">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="Signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <div class="search-box">
                     <input type="text" placeholder="What are you looking for?" class="search-input">
                     <button class="search-button">
                         <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -50,49 +56,51 @@
                         </svg>
                     </button>
                 </div>
-    </div>
-</div>
-<div class="header-divider"></div>
+            </div>
+            
+        
+        </div>
+        <div class="header-divider"></div>
+    </header>
 
 
 
 
 
-<!-- this is signup form section -->
-<div class="main-section">
+<!-- this is body section -->
+ <div class="main-section">
     <div class="left-image-box">
+        <!-- Assuming the image path is correct -->
         <img src="Images/Login/Login-image.png" alt="shopping image">
     </div>
     <div class="right-box">
         <div class="heading-block">
-            <h2 class="title">Create an account</h2>
+            <h2 class="title">Log in to Exclusive</h2>
             <p class="subtitle">Enter your details below</p>
         </div>
-        <div class="form-block">
-            <div class="input-group">
-                <input type="text" placeholder="Name">
-                <div class="underline"></div>
-            </div>
-            <div class="input-group">
-                <input type="text" placeholder="Email or Phone Number">
-                <div class="underline"></div>
-            </div>
-            <div class="input-group">
-                <input type="password" placeholder="Password">
-                <div class="underline"></div>
-            </div>
-            <button class="create-btn">Create Account</button>
-            <button class="google-btn">
-                <img src="Images/Google-logo.png" alt="google" class="google-icon">
-                Sign up with Google
-            </button>
-            <div class="login-text">
-                <span class="have-account">Already have an account?</span>
-                <a href="login.html" class="login-link">Log in</a>
-            </div>
+        <!-- Removed .form-block wrapper as it was unused in your CSS -->
+
+        <div class="input-group">
+            <input type="text" placeholder="Email or Phone Number">
+            <!-- Assuming this div is for the actual underline visual -->
+            <div class="underline"></div>
         </div>
+        <div class="input-group">
+            <input type="password" placeholder="Password">
+            <div class="underline"></div>
+        </div>
+
+        <!-- NEW: Wrapper for the side-by-side elements -->
+        <div class="login-actions">
+            <button class="login-btn">Log In</button>
+            <button class="forget-btn">Forget Password?</button>
+        </div>
+
     </div>
 </div>
+
+
+
 
 
 
@@ -136,22 +144,19 @@
             <h3 class="footer-heading">Download App</h3>
             <p class="footer-small">Save $3 with App New User Only</p>
             <div class="app-section">
-  <img src="Images/footer-down/Qr-code.jpg" class="qr-img" alt="QR code">
-  <div class="store-box">
-    <div class="store-item">
-      <img src="Images/footer-down/Google-play.png" class="store-img" alt="Google Play">
-    </div>
-    <div class="store-item">
-      <img src="Images/footer-down/App-play.png" class="store-img" alt="App Store">
-    </div>
-  </div>
-</div>
-            <!-- <div class="social-icons">
+                <img src="Images/footer-down/Qr-code.jpg" class="qr-img">
+
+                <div class="store-images">
+                    <img src="Images/footer-down/Google-play.png" class="store-img">
+                    <img src="Images/footer-down/App-play.png" class="store-img">
+                </div>
+            </div>
+            <div class="social-icons">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-linkedin-in"></i>
-            </div> -->
+            </div>
         </div>
     </div>
     <div class="footer-bottom">
