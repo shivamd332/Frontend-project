@@ -9,7 +9,7 @@ body {
   background: #fff;
 }
 
-/*  this is Header Top section*/
+/* --------------------this is Header Top section-------------------- */
 .header-top {
   width: 100%;
   background: #000;
@@ -44,7 +44,7 @@ body {
   border-radius: 4px;
 }
 
-/* this is Header main Section */
+/* --------------------this is Header main Section-------------------- */
 .header-main {
   background-color: #fff;
   padding: 0;
@@ -125,7 +125,7 @@ body {
   background: #e5e5e5;
 }
 
-/* this is  Signup section */
+/* --------------------this is  Signup section-------------------- */
 .main-section {
   max-width: 1200px;
   display: flex;
@@ -211,7 +211,7 @@ body {
   color: #000;
 }
 
-/* this is Footer section */
+/* --------------------this is Footer section-------------------- */
 .footer {
   background: #000;
   color: #fff;
@@ -336,7 +336,7 @@ body {
   padding-top: 15px;
 }
 
-/* RESPONSIVE: TABLET <= 992px */
+/* --------------------RESPONSIVE: TABLET <= 992px-------------------- */
 @media (max-width: 992px) {
   .main-section {
     flex-direction: column;

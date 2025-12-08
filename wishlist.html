@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="wishlist.css" />
 </head>
 <body>
-    <!-- this is Header top section -->
+    <!-- --------------------this is Top Header section-------------------- -->
     <div class="header-top">
         <div class="container header-top-content">
             <div class="header-top-frame1">
@@ -27,26 +27,23 @@
         </div>
     </div>
 
-    <!-- this is Header main section -->
+    <!-- --------------------this is Main Header section-------------------- -->
     <div class="header-main">
             <div class="container header-main-content">
 
-                <!-- Logo -->
                 <div class="logo">
                     <a href="#">Exclusive</a>
                 </div>
 
-                <!-- Navigation -->
                 <nav class="nav-menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="Index.html">Home</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="Signup.html">Sign Up</a></li>
                     </ul>
                 </nav>
 
-                    <!-- Search -->
                     <div class="search-box">
                         <input type="text" placeholder="What are you looking for?" class="search-input" />
                         <button class="search-button">
@@ -57,20 +54,17 @@
                             </svg>
                         </button>
                     </div>
-                    <!-- Icons -->
                     <div class="header-icons">
 
-                        <!-- Wishlist -->
                         <a href="#" class="icon-link wishlist-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none">
                                 <path stroke="currentColor" stroke-width="2"
                                     d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
                             </svg>
-                            <span class="cart-badge">4</span>
+                            <span class="wishlist-badge">4</span>
                         </a>
 
-                        <!-- Cart -->
                         <a href="#" class="icon-link cart-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none">
@@ -79,7 +73,6 @@
                             </svg>
                         </a>
 
-                        <!-- Account -->
                         <div class="account-container">
                             <input type="checkbox" id="toggle-account" hidden />
                             <label for="toggle-account" class="account-icon">
@@ -89,17 +82,99 @@
             </div>
     </div>
     <div class="header-divider"></div>
+    </div>
 
+    <!-- --------------------this is main wishlist section-------------------- -->
+     <div class="container">
 
+    <div class="wishlist-header">
+      <h2>Wishlist (4)</h2>
+      <button class="move-btn">Move All To Bag</button>
+    </div>
 
+    <div class="product-grid">
+      <div class="product-card">
+        <span class="discount">-35%</span>
+        <img src="Images/Best-selling/bag.png" alt="">
+        <span class="delete">&#128465;</span>
+        <button class="cart-btn">🛒 Add To Cart</button>
+        <h4>Gucci duffle bag</h4>
+        <p class="price">$960 <span class="old">$1160</span></p>
+      </div>
 
+      <div class="product-card">
+        <img src="Images/Best-selling/cpu-cooler.png" alt="">
+        <span class="delete">&#128465;</span>
+        <button class="cart-btn">🛒 Add To Cart</button>
+        <h4>RGB liquid CPU Cooler</h4>
+        <p class="price">$1960</p>
+      </div>
 
+      <div class="product-card">
+        <img src="Images/Explore/gaming-pad.png" alt="">
+        <span class="delete">&#128465;</span>
+        <button class="cart-btn">🛒 Add To Cart</button>
+        <h4>GP11 Shooter USB Gamepad</h4>
+        <p class="price">$550</p>
+      </div>
 
-    <!-- this is footer section -->
+      <div class="product-card">
+        <img src="Images/Explore/jacket.png" alt="">
+        <span class="delete">&#128465;</span>
+        <button class="cart-btn">🛒 Add To Cart</button>
+        <h4>Quilted Satin Jacket</h4>
+        <p class="price">$750</p>
+      </div>
+    </div>
+
+    <div class="recommend-header">
+      <div class="title-box"></div>
+      <h3>Just For You</h3>
+      <button class="see-all">See All</button>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <span class="discount">-35%</span>
+        <img src="Images/Explore/laptop.png" alt="">
+        <button class="cart-btn">🛒 Add To Cart</button>
+        <h4>ASUS FHD Gaming Laptop</h4>
+        <p class="price">$960 <span class="old">$1160</span></p>
+        <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐ (65)</p>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/Flash-sale/monitor.png" alt="">
+        <button class="cart-btn">🛒 Add To Cart</button>
+        <h4>IPS LCD Gaming Monitor</h4>
+        <p class="price">$1160</p>
+        <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐ (65)</p>
+      </div>
+
+      <div class="product-card">
+        <span class="new-tag">NEW</span>
+        <img src="Images/Flash-sale/gamepad.png" alt="">
+        <button class="cart-btn">🛒 Add To Cart</button>
+        <h4>HAVIT HV-G92 Gamepad</h4>
+        <p class="price">$560</p>
+        <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐ (65)</p>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/Flash-sale/keyboard.png" alt="">
+        <button class="cart-btn">🛒 Add To Cart</button>
+        <h4>AK-900 Wired Keyboard</h4>
+        <p class="price">$200</p>
+        <p class="rating">⭐ ⭐ ⭐ ⭐ ⭐ (65)</p>
+      </div>
+    </div>
+
+  </div>
+
+    <!-- --------------------this is footer section-------------------- -->
      <footer class="footer">
         <div class="footer-container">
 
-            <!-- Footer Box 1 -->
             <div class="footer-box">
                 <h2 class="footer-title">Exclusive</h2>
                 <p class="footer-subtitle">Subscribe</p>
@@ -110,7 +185,6 @@
                 </div>
             </div>
 
-            <!-- Footer Box 2 -->
             <div class="footer-box">
                 <h3 class="footer-heading">Support</h3>
                 <p class="footer-text">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
@@ -118,7 +192,6 @@
                 <p class="footer-small">+88015-88888-9999</p>
             </div>
 
-            <!-- Footer Box 3 -->
             <div class="footer-box">
                 <h3 class="footer-heading">Account</h3>
                 <p class="footer-text">My Account</p>
@@ -128,7 +201,6 @@
                 <p class="footer-text">Shop</p>
             </div>
 
-            <!-- Footer Box 4 -->
             <div class="footer-box">
                 <h3 class="footer-heading">Quick Link</h3>
                 <p class="footer-text">Privacy Policy</p>
@@ -137,7 +209,6 @@
                 <p class="footer-text">Contact</p>
             </div>
 
-            <!-- Footer Box 5 -->
             <div class="footer-box">
                 <h3 class="footer-heading">Download App</h3>
 
@@ -155,7 +226,6 @@
                 </div>
 
                 <div class="social-icons">
-                    <!-- Icons -->
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
   <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
 </svg>
