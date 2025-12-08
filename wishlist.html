@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exclusive E-commerce</title>
-    <link rel="stylesheet" href="Signup.css" />
+    <link rel="stylesheet" href="wishlist.css" />
 </head>
 <body>
     <!-- this is Header top section -->
@@ -57,56 +57,46 @@
                             </svg>
                         </button>
                     </div>
+                    <!-- Icons -->
+                    <div class="header-icons">
+
+                        <!-- Wishlist -->
+                        <a href="#" class="icon-link wishlist-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                            </svg>
+                            <span class="cart-badge">4</span>
+                        </a>
+
+                        <!-- Cart -->
+                        <a href="#" class="icon-link cart-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
+                                <path stroke="currentColor" stroke-width="2"
+                                    d="M5 4h1.5L9 16h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.31" />
+                            </svg>
+                        </a>
+
+                        <!-- Account -->
+                        <div class="account-container">
+                            <input type="checkbox" id="toggle-account" hidden />
+                            <label for="toggle-account" class="account-icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="User" />
+                            </label>
                 </div>
             </div>
     </div>
     <div class="header-divider"></div>
 
-    <!-- this is Signup section -->
-    <main class="main-section">
-        <div class="left-image-box">
-            <img src="Images/Login/Login-image.png" alt="Shopping image" />
-        </div>
 
-        <div class="right-box">
-            <div class="heading-block">
-                <h2 class="title">Create an account</h2>
-                <p class="subtitle">Enter your details below</p>
-            </div>
 
-            <form class="form-block">
-                <div class="input-group">
-                    <input type="text" placeholder="Name" />
-                    <div class="underline"></div>
-                </div>
 
-                <div class="input-group">
-                    <input type="text" placeholder="Email or Phone Number" />
-                    <div class="underline"></div>
-                </div>
 
-                <div class="input-group">
-                    <input type="password" placeholder="Password" />
-                    <div class="underline"></div>
-                </div>
 
-                <button type="submit" class="create-btn">Create Account</button>
-
-                <button class="google-btn" type="button">
-                    <img src="Images/Google-logo.png" alt="Google logo" class="google-icon" />
-                    Sign up with Google
-                </button>
-
-                <div class="login-text">
-                    <span class="have-account">Already have an account?</span>
-                    <a href="login.html" class="login-link">Log in</a>
-                </div>
-            </form>
-        </div>
-    </main>
-
-    <!-- this is Footer section -->
-    <footer class="footer">
+    <!-- this is footer section -->
+     <footer class="footer">
         <div class="footer-container">
 
             <!-- Footer Box 1 -->
