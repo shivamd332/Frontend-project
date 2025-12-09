@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exclusive E-commerce</title>
-    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="checkout.css" />
 </head>
 <body>
     <!-- --------------------this is Top Header section-------------------- -->
@@ -85,83 +85,110 @@
     <div class="header-divider"></div>
     </div>
 
-    <!-- --------------------this is Main Cart section-------------------- -->
-     <div class="container-cart">
+    <!-- --------------------this is Main Checkout -------------------- -->
+     <div class="container-checkout">
 
+    <!-- Breadcrumb -->
     <div class="breadcrumb">
-        Home / <span>Cart</span>
+        Account / My Account / Product / View Cart / <span>Checkout</span>
     </div>
 
-    <div class="cart-header">
-        <p>Product</p>
-        <p>Price</p>
-        <p>Quantity</p>
-        <p>Subtotal</p>
-    </div>
+    <h2 class="title">Billing Details</h2>
 
-    <div class="cart-item">
-        <div class="product">
-            <span class="remove">✖</span>
-            <img src="Images/Flash-sale/monitor.png" alt="">
-            <p>LCD Monitor</p>
-        </div>
-        <p>$650</p>
-        <select class="quantity">
-            <option>01</option>
-            <option>02</option>
-            <option>03</option>
-        </select>
-        <p>$650</p>
-    </div>
+    <div class="checkout-section">
 
-    <div class="cart-item">
-        <div class="product">
-            <span class="remove">✖</span>
-            <img src="Images/Flash-sale/gamepad.png" alt="">
-            <p>HI Gamepad</p>
-        </div>
-        <p>$550</p>
-        <select class="quantity">
-            <option>01</option>
-            <option selected>02</option>
-            <option>03</option>
-        </select>
-        <p>$1100</p>
-    </div>
+        <!-- Left Form -->
+        <div class="billing-form">
+            <label>First Name*</label>
+            <input type="text">
 
-    <div class="cart-buttons">
-        <button class="outline-btn">Return To Shop</button>
-        <button class="outline-btn">Update Cart</button>
-    </div>
+            <label>Company Name</label>
+            <input type="text">
 
-    <div class="bottom-section">
+            <label>Street Address*</label>
+            <input type="text">
 
-        <div class="coupon-box">
-            <input type="text" placeholder="Coupon Code">
-            <button class="apply-btn">Apply Coupon</button>
+            <label>Apartment, floor, etc. (optional)</label>
+            <input type="text">
+
+            <label>Town/City*</label>
+            <input type="text">
+
+            <label>Phone Number*</label>
+            <input type="text">
+
+            <label>Email Address*</label>
+            <input type="text">
+
+            <div class="save-info">
+    <label class="custom-checkbox">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+    </label>
+    <p>Save this information for faster check-out next time</p>
+</div>
+
         </div>
 
-        <div class="cart-total">
-            <h3>Cart Total</h3>
+        <!-- Order Summary -->
+        <div class="order-summary">
 
-            <div class="total-row">
+            <div class="product-row">
+                <img src="Images/Flash-sale/monitor.png">
+                <p>LCD Monitor</p>
+                <span>$650</span>
+            </div>
+
+            <div class="product-row">
+                <img src="Images/Flash-sale/gamepad.png">
+                <p>HI Gamepad</p>
+                <span>$1100</span>
+            </div>
+
+            <div class="summary-line">
                 <p>Subtotal:</p>
-                <p>$1750</p>
+                <span>$1750</span>
             </div>
 
-            <div class="total-row">
+            <div class="summary-line">
                 <p>Shipping:</p>
-                <p>Free</p>
+                <span>Free</span>
             </div>
 
-            <div class="total-row total-bold">
+            <div class="summary-line total">
                 <p>Total:</p>
-                <p>$1750</p>
+                <span>$1750</span>
             </div>
 
-            <button class="checkout-btn" onclick="window.location.href='checkout.html'">
-              Proceed to checkout
-            </button>
+            <!-- Payment Methods -->
+            <div class="payment-method">
+                <label class="pay-method-row">
+                    <span class="pay-left">
+                        <input type="radio" name="pay">
+                        Bank 
+                    </span>
+                    <span class="pay-icons">
+                    <img src="Images/Pay-icon/bKash.png" class="pay-icon">
+                    <img src="Images/Pay-icon/visa.png" class="pay-icon">
+                    <img src="Images/Pay-icon/mastercard.png" class="pay-icon">
+                    <img src="Images/Pay-icon/bengalBank.png" class="pay-icon">
+                    </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pay" checked>
+                    Cash on delivery
+                </label>
+            </div>
+
+            <!-- Coupon -->
+            <div class="coupon-box">
+                <input type="text" placeholder="Coupon Code">
+                <button class="apply-btn">Apply Coupon</button>
+            </div>
+
+            <button class="place-order">Place Order</button>
+
         </div>
 
     </div>
