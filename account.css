@@ -135,6 +135,12 @@ body {
   transition: 0.3s;
 }
 
+.nav-menu ul li:first-child a {
+  text-decoration: underline;
+  text-decoration-color: rgb(90, 84, 84);
+  text-decoration-thickness: 2px;
+}
+
 .nav-menu a:hover {
   color: var(--primary);
 }

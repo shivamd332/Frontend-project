@@ -84,12 +84,6 @@ body {
   transition: 0.3s;
 }
 
-.nav-menu ul li:nth-child(3) a {
-  text-decoration: underline;
-  text-decoration-color: rgb(90, 84, 84);
-  text-decoration-thickness: 2px;
-}
-
 .nav-menu a:hover {
   color: #DB4444;
 }
@@ -188,185 +182,56 @@ body {
   width: 18px;
 }
 
-/* --------------------this is Main About section-------------------- */
-.container-about {
-  padding: 15px;
-  width: 100%;
-  max-width: 1300px;
+/* --------------------this is Main 404error section-------------------- */
+.container-error {
+  max-width: 1200px;
   margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .breadcrumb {
-  margin-top: 20px;
-  font-size: 16px;
   color: #777;
-  margin-bottom: 30px;
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 .breadcrumb span {
   color: #000;
 }
 
-.story-section {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 50px;
+.error-content {
+  text-align: center;
+  margin-top: 80px;
 }
 
-.story-text {
-  flex: 1;
-  padding-top: 60px;
-  padding-right: 100px;
-}
-
-.story-text h2 {
-  font-size: 32px;
+.error-content h1 {
+  font-size: 90px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
-.story-text p {
+.error-content p {
   font-size: 16px;
-  color: #211d1d;
-  margin-bottom: 35px;
-  line-height: 1.6;
+  color: #666;
+  margin-bottom: 40px;
 }
 
-.story-image img {
-  width: 500px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.stats-section {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin: 50px 0;
-}
-
-.stat-box {
-  flex: 1;
-  text-align: center;
-  border: 1px solid #eee;
-  padding: 30px 10px;
-  border-radius: 10px;
-  background: #fff;
-}
-
-.stat-box.active {
+.back-btn {
   background: #DB4444;
-  color: #fff;
-}
-
-.stat-icon {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.stat-box h3 {
-  font-size: 26px;
-  margin-bottom: 5px;
-}
-
-.team-section {
-  display: flex;
-  justify-content: space-between;
-  margin: 60px 0;
-}
-
-.team-card {
-  flex: 1;
-  text-align: center;
-}
-
-.team-card img {
-  width: 260px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.team-card h4 {
-  margin-top: 15px;
-  font-size: 18px;
-}
-
-.team-card p {
-  color: #555;
-  margin-bottom: 12px;
-}
-
-@media (max-width: 900px) {
-
-  .story-section,
-  .stats-section,
-  .team-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .story-image img {
-    width: 100%;
-  }
-}
-
-/* --------------------this is Service section-------------------- */
-.service-container {
-  width: 100%;
-  max-width: 943px;
-  height: auto;
-  margin: 40px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 88px;
-  padding: 10px;
-  flex-wrap: wrap;
-}
-
-.service-box {
-  width: 249px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-.service-icon {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
-
-.service-text {
-  width: 249px;
-  height: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.service-text h3 {
-  margin: 0 auto;
-  font-family: Poppins, sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  background: white;
-  color: black;
-  white-space: nowrap;
-}
-
-.service-text p {
-  margin: 0 auto;
-  font-family: Poppins, sans-serif;
-  font-weight: 400;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
   font-size: 14px;
-  line-height: 21px;
-  background: white;
-  color: black;
+  display: inline-block;
+}
+
+/* --------------------Responsive-------------------- */
+@media (max-width: 768px) {
+  .error-content h1 {
+    font-size: 60px;
+  }
 }
 
 /* --------------------this is Footer section-------------------- */

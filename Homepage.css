@@ -124,6 +124,12 @@ body {
   white-space: nowrap;
 }
 
+.nav-menu ul li:first-child a {
+  text-decoration: underline;
+  text-decoration-color:rgb(90, 84, 84) ;
+  text-decoration-thickness: 2px;
+}
+
 .nav-menu a {
   text-decoration: none;
   color: var(--text);
